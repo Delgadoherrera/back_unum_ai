@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "the-byway-410420",
+  "private_key_id": "9ab864cb800b311b1f10cce66121aad667d50165",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCIrbUhrCO5UtvM\nU904op/Xd9jk98nuC9cRi8Sbva16mRzBSMjgy0SraX1NYUeKHN2L3QBp8D3hg08l\nrKAieJCfoWrz5fMINeWfphjbqKKUEn/Jk595AEaRqI0U+llpGrKiH5jyf5RhN8YF\ntZi7uJK6xC5zqCvgaM9lYj3HEwyIyIVqYMwyNlkMTCkfiocPT2dueaWD5FTti42G\nCPeuzicSDYuJhju/DzrxBte9Gx1UaaXKscTIyqSbPEA/fEQfyLCGyh+c1tzd07ek\nPg7xPJHo7oUV/5iRX+yQ+GIvSq2vRI+ivlQ6PHJWzC7UDpmZvRNTyYuRxRFejKgX\nXapU98ezAgMBAAECggEACjNbV90sOLTC5mUslwFSyEwlBLMA6pe5SubGsHrqW20u\n9LafwLXa9Py6rHpB/RWkwT9SvGqrgPesV1r4A+qXR0VO9qSm9pS92PmWqa9/HBRP\nXjYldOySLQ/KdmeCzHHWJXxnN/375Ho6+LUcu4c4cuDuYz+zWpxn53X6t1n9bv3a\n72ETC8s8k9QycD7oWXGETUsB8OEzRPk/rM9wQPZmShsFbAmwKHpyvNFkim9bYffj\nkkd3oJHZyZwjOgiD8lBBtLWIYjVYZ2a63wsdbIobUqx4X0Bpo7NCm8H+w7usx/5Y\nu7hq8NQZk7aRlFsHbbG6xG4+H0WfeHNiuoZ6PMXRTQKBgQC7bzs2186gD/aEYrzd\nq/zLrM7718RL+Htqw3/ik2by5beRDJvxNcgyD4Pg2sA4Q/zsSEM0ZpPAKSuH0yOn\n2Fms00urVyQ//toSuKxebKIR81RBpBzN4RrMJHylCZmheet7+BVkyNgDl05YqoKw\n3HvvBt5gfwMn7Fe1GT66INT/pQKBgQC6rU8izo6tr4na+QKh+yX+as+X5EKkEHP0\n1nz9HVubL28MKrOw6W2HEwj+wvT0yKdDls6p7Fs27PHAuj2NWFrRuA1sN4KwuIih\nJ6fAkb9usLD8KiYWmcluz0A15AJNunLeQniBHcl2BjP2O5bTDyPBXLdA8QwAu7UX\nq3CyJq6KdwKBgC0J+WygRuJnc5E0OLX7ke9PQx15J44p015ARAap7N8JHCcapI49\nojGFUOdDKVVb4PbWFnANBgvy2Kb2sWavsjy5OUGe2vMVxkkhXyoBaKBvnBt52AIQ\nyWOskNcHi4clyNQtNNbW/DFAtm7P6j+de5pgSCdf3d5GCH1X557KLOSRAoGBAKZb\nOdGX57hKXXyBOeJl8MbYIqWGagjRDLTcy8e4+ODDlZ9vEnEOpGeiA/sce7UEd2KZ\nKxRsqCC7aPlKPv4OBeksrvGISnP4DvImZ60JdWJMHXyqhwTPCZ4xHVSpG5BvHlyJ\nOeA+TkFaZ8X/9nmh3Ug8uqYp6Xthy5ELW8O3CwYjAoGAVGntOGHR9GZDUPoFOxn3\nXTY8DN1NOk9ZqMI7b04PRdtqn1OpxcPlvCT0zPxHO03gJVjFAx17deHF7Ud2Zx0+\nVkg2KOHY5uw7Bj8b2GwSdBHmBo/a+A1Y4COmT3g5BqZqOfFrVhWrdniCB74N/vvx\nxOlmfXgOJk5C3rUD2EZsY7A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vertexai-unum@the-byway-410420.iam.gserviceaccount.com",
+  "client_id": "114544876628485906239",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vertexai-unum%40the-byway-410420.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

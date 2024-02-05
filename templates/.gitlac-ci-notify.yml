@@ -1,0 +1,49 @@
+
+send_email:
+  stage: notify
+  script:
+    - export CI_JOB_TIMESTAMP=$(date --utc --iso-8601=seconds)
+    - >
+      sudo sendemail
+      -f $SMTP_EMAIL 
+      -t $USERS_RECIPIENTS 
+      -s smtp.gmail.com:587 
+      -u "New Version ${CI_PROJECT_NAME}" 
+      -m "Hi! <br><br> A new version of the app ${CI_PROJECT_NAME} was published at ${CI_JOB_TIMESTAMP}<br>
+      <strong>User Name:</strong> ${GITLAB_USER_NAME} <br>
+      <strong>User Email:</strong> ${GITLAB_USER_EMAIL} <br>
+      <strong>User URL:</strong> <a href=\"${CI_SERVER_HOST}/lpagitlab/${GITLAB_USER_LOGIN}\">${GITLAB_USER_LOGIN}</a><br>
+      <strong>Branch Name:</strong> ${CI_COMMIT_REF_NAME} <br> 
+      <strong>Commit Message:</strong> ${CI_COMMIT_MESSAGE} <br> 
+      <strong>Commit SHA:</strong> <a href=\"${CI_PROJECT_URL}/commit/${CI_COMMIT_SHA}\">${CI_COMMIT_SHA}</a> <br> 
+      <strong>Repository URL:</strong> <a href=\"${CI_PROJECT_URL}\">Gitlab - ${CI_PROJECT_NAME}</a> <br>
+      <strong>URL:</strong> <a href=\"http://192.168.1.85:${DOCKER_WEB_PORT}/\">${CI_PROJECT_NAME}</a>"
+      -v -xu $SMTP_EMAIL -xp $SMTP_EMAIL_PASSWORD
+      -o tls=yes message-content-type=html
+  tags:
+    - shelldevops
+  only:
+    - branches
+
+send_email_error:
+  stage: notify
+  script:
+    - >
+      sudo sendemail
+      -f $SMTP_EMAIL
+      -t $GITLAB_USER_EMAIL
+      -s smtp.gmail.com:587
+      -u "Error Pipeline ${CI_PROJECT_NAME}"
+      -m "Hi! <br><br> Please check Error <br><br>
+      <strong>Pipeline:</strong> <a href=\"$CI_PIPELINE_URL\">#${CI_PIPELINE_ID}</a> <br>
+      <strong>Branch Name:</strong> ${CI_COMMIT_REF_NAME} <br>
+      <strong>Commit Message:</strong> ${CI_COMMIT_MESSAGE} <br> 
+      <strong>Repository URL:</strong> <a href=\"${CI_PROJECT_URL}\">Gitlab - ${CI_PROJECT_NAME}</a> <br>
+      <strong>URL:</strong> <a href=\"http://192.168.1.85:${DOCKER_WEB_PORT}\">${CI_PROJECT_NAME}</a>"
+      -v -xu $SMTP_EMAIL -xp $SMTP_EMAIL_PASSWORD
+      -o tls=yes message-content-type=html
+  tags:
+    - shelldevops
+  only:
+    - branches
+  when: on_failure

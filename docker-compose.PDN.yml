@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  unum_ia:
+    build:
+      context: .
+      dockerfile: Dockerfile.PDN
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl --fail http://localhost:5000 || exit 1"
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 10
